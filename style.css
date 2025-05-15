@@ -38,11 +38,28 @@ body{
     margin: 0;
 }
 
-#body {
+.body {
     font-family: 'Phantom Sans';
     text-align: center;
     color: #ec3750;
-    padding: 0 20% 0 20%
+    padding: 0 20% 0 20%;
+    margin-top: 10px;
+    margin-bottom: 30px
+}
+
+.body-dark{
+    font-family: 'Phantom Sans';
+    background-color: #8492a6;
+    margin: 0;
+    color:#e0e6ed;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px
 }
 
 #header{
@@ -112,7 +129,6 @@ button {
     line-height: inherit;
     text-decoration: none;
     padding: 16px 16px 16px 16px;
-    color: #ffffff;
     background-color: #ec3750;
     font-size:20px;
     background: none;
