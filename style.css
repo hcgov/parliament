@@ -87,22 +87,41 @@ h1{
     background-color: rgb(4, 0, 0);
     text-align: center;
     margin-bottom: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 3px 3px
 }
 
-#election {
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 99999px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
+    letter-spacing: 0.009em;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.125s ease-in-out, box-shadow 0.125s ease-in-out;
+    box-sizing: border-box;
+    margin-top: 10px;
+    min-width: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+    line-height: inherit;
+    text-decoration: none;
+    padding: 16px 16px 16px 16px;
+    color: #ffffff;
     background-color: #ec3750;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    transition: border-radius 1s, background-color 1s;
-    user-select: none;
-    -webkit-user-select: none;
+    font-size:20px;
+    background: none;
+    color: #ec3750;
+    border: 2px solid currentcolor;
+    padding: 5px 5px 5px 5px
 }
-#election:hover {
-    border-radius: 30px;
-    background-color: #ad2436;
+button:focus,
+button:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.125);;
+    transform: scale(1.0625);
 }

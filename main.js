@@ -5,8 +5,8 @@ document.getElementById("insertTOP").innerHTML = `
 `
 document.getElementById("navbar").innerHTML = `
 <div id="header-links">
-    <a href="index.html"><div style="padding-left:10px; padding-right:10px">Home</div></a>
-    <a href="about.html"><div style="padding-left:10px; padding-right:10px">About</div></a>
+    <a href="/index.html"><div style="padding-left:10px; padding-right:10px">Home</div></a>
+    <a href="/about"><div style="padding-left:10px; padding-right:10px">About</div></a>
     <div style="padding-left:10px; padding-right:10px">News & Legislation</div>
     <div style="padding-left:10px; padding-right:10px">Parliament</div>
     <div style="padding-left:10px; padding-right:10px">Committees & Divisions</div>
@@ -15,11 +15,11 @@ document.getElementById("navbar").innerHTML = `
 `;
 document.getElementById("header").innerHTML = `
 <!--<img src="parliament-full.svg" id="logo">-->
-<img src="favicon.ico.png" id="logo">
+<img src="/parliament-full.svg" id="logo">
 `
 document.getElementById("logo").onclick = function() {
     window.location.href="index.html";
 }
 document.getElementById("disclaimer").innerHTML = `
-    <h3>The Parliament of Hack Club and other associated communities are not officially associated with the Hack Club non-profit organization
+    <h3>The Parliament of Hack Club and other associated entities are not associated with the Hack Club non-profit organization
 `
