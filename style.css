@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..800");
+.montserrat {
+    font-family: Montserrat;
+}
 @font-face {
     font-family: 'Phantom Sans';
     src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
@@ -48,6 +52,7 @@ body{
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 20px;
+    margin-top: 0;
 }
 
 #header-links{
@@ -60,12 +65,44 @@ body{
     padding-top: 15px;
     padding-bottom: 20px;
     font-size: 20px;
+    a {
+        color:#e0e6ed;
+        text-decoration: none;
+
+    }
 }
 
 #logo {
     height: 60px;
+    cursor: pointer;
 }
 
 h1{
     font-size: 40px
+}
+
+#disclaimer {
+    font-family: Phantom Sans;
+    color: white;
+    background-color: rgb(4, 0, 0);
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#election {
+    background-color: #ec3750;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    transition: border-radius 1s, background-color 1s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+#election:hover {
+    border-radius: 30px;
+    background-color: #ad2436;
 }
