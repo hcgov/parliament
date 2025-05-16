@@ -74,6 +74,9 @@ body{
     margin-bottom: 0px;
     padding: 10px;
 }
+.sessionNULL {
+    background-color: #b33589 !important;
+}
 .body-red{
     font-family: 'Phantom Sans';
     background-color: #9d4242;
