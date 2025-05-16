@@ -53,13 +53,11 @@ body{
     margin: 0;
     color:#e0e6ed;
     min-width: 100%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding-top: 15px;
     padding-bottom: 20px;
     font-size: 20px;
     margin-top: 20px;
-    margin-bottom: 10px
 }
 
 #header{
@@ -129,9 +127,8 @@ button {
     line-height: inherit;
     text-decoration: none;
     padding: 16px 16px 16px 16px;
-    background-color: #ec3750;
+    background-color: #e0e6ed;
     font-size:20px;
-    background: none;
     color: #ec3750;
     border: 2px solid currentcolor;
     padding: 5px 5px 5px 5px
