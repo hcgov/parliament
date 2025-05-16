@@ -24,5 +24,10 @@ document.getElementById("disclaimer").innerHTML = `
     <h3>The Parliament of Hack Club and other associated entities are not associated with the Hack Club non-profit organization
 `
 setInterval(() => {
-    document.getElementById("ballot-countdown").innerHTML = `${Math.floor(Math.round(1747440000 - Date.now()/1000)/3600)}:${(Math.floor((Math.round(1747440000 - Date.now()/1000)/60))%60).toLocaleString(undefined, { minimumIntegerDigits: 2 })}:${(Math.floor((Math.round(1747440000 - Date.now()/1000)))%60).toLocaleString(undefined, { minimumIntegerDigits: 2 })}`;
+    if(1747440000 - Date.now()/1000 >= 0) {
+        document.getElementById("ballot-countdown").innerHTML = `${Math.floor(Math.round(1747440000 - Date.now() / 1000) / 3600)}:${(Math.floor((Math.round(1747440000 - Date.now() / 1000) / 60)) % 60).toLocaleString(undefined, {minimumIntegerDigits: 2})}:${(Math.floor((Math.round(1747440000 - Date.now() / 1000))) % 60).toLocaleString(undefined, {minimumIntegerDigits: 2})}`;
+    }else{
+        document.getElementById("ballot-banner-title").innerHTML = `Time until the May 2025 ballot closes:`
+        document.getElementById("ballot-countdown").innerHTML = `${Math.floor(Math.round(1748217600 - Date.now() / 1000) / 3600)}:${(Math.floor((Math.round(1748217600 - Date.now() / 1000) / 60)) % 60).toLocaleString(undefined, {minimumIntegerDigits: 2})}:${(Math.floor((Math.round(1747440000 - Date.now() / 1000))) % 60).toLocaleString(undefined, {minimumIntegerDigits: 2})}`;
+    }
 }, 1000);
