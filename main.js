@@ -2,6 +2,7 @@ document.getElementById("insertTOP").innerHTML = `
 <div id="disclaimer"></div>
 <div id="header"></div>
 <div id="navbar"></div>
+<div id="statusHeader" class="body-redX" style="user-select: none; -webkit-user-select: none;"></div>
 `
 document.getElementById("navbar").innerHTML = `
 <div id="header-links">
@@ -27,6 +28,21 @@ document.getElementById("logo").onclick = function() {
 document.getElementById("disclaimer").innerHTML = `
     <h3>The Parliament of Hack Club and other associated entities are not associated with the Hack Club non-profit organization
 `
+fetch("https://raw.githubusercontent.com/hcgov/API/refs/heads/main/status.json")
+        .then(function(response) {
+            return response.json();
+        })
+        .then (function(data) {
+            if (data.status === ("in session")) {
+                document.getElementById("statusHeader").innerHTML = "<h3>● LIVE <span>Parliament is in session</span></h3>";
+            }
+            else {
+                document.getElementById("statusHeader").innerHTML = "<h3>● LIVE <span>Parliament is not in session</span></h3>";
+            }
+        })
+                
+
+
 setInterval(() => {
     if(1747440000 - Date.now()/1000 >= 0) {
         document.getElementById("ballot-countdown").innerHTML = `${Math.floor(Math.round(1747440000 - Date.now() / 1000) / 3600)}:${(Math.floor((Math.round(1747440000 - Date.now() / 1000) / 60)) % 60).toLocaleString(undefined, {minimumIntegerDigits: 2})}:${(Math.floor(Math.round(1747440000 - Date.now() / 1000)) % 60).toLocaleString(undefined, {minimumIntegerDigits: 2})}`;
