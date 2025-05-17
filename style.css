@@ -173,6 +173,22 @@ button:hover {
 
 
 
+.chartMenu p {
+    padding: 10px;
+    font-size: 20px;
+}
+.chartCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chartBox {
+    width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #e0e6ed;
+}
+
 span {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.125);
 }
