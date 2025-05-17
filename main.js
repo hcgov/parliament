@@ -90,7 +90,7 @@ loadParliamentData(() => {
             '#FF91AF',
         ],
         borderWidth: 5,
-        cutout: '40%',
+        cutout: '60%',
         circumference: 180,
         rotation: -90
     }]
@@ -106,12 +106,72 @@ loadParliamentData(() => {
     };
 
 // render init block
-    const myChart = new Chart(
-        document.getElementById('myChart'),
-        config
-    );
+    new Chart(document.getElementById('myChart'), config);
 
 // Instantly assign Chart.js version
     const chartVersion = document.getElementById('chartVersion');
-    chartVersion.innerText = Chart.version;})
+    chartVersion.innerText = Chart.version;
+});
 
+loadParliamentData(() => {
+    const values = parliamentData[1].c.map(cell => cell?.v || 0);
+    const data = {
+        labels: ['HCP', 'hUWUp', 'HGP', 'WME', 'HDP', 'HCRP', ':3', 'HCLP', '[I] Advait', '[I] NonsensicalGibberish', '[I] Loop', '[I] Ryan'],
+        datasets: [{
+            label: 'Vote share',
+            data: values,
+            backgroundColor: [
+                '#ff0000',
+                '#FF91AF',
+                '#9268F6',
+                '#00C4D6',
+                '#FCEBFF',
+                '#9585EE',
+                '#FFC8D6',
+                '#FCC624',
+                '#777777',
+                '#777777',
+                '#777777',
+                '#777777',
+            ],
+            borderColor: [
+                '#ff0000',
+                '#FF91AF',
+                '#9268F6',
+                '#00C4D6',
+                '#FCEBFF',
+                '#9585EE',
+                '#FFC8D6',
+                '#FCC624',
+                '#EDE621',
+                '#ffffff',
+                '#00C4D6',
+                '#FF91AF',
+            ],
+            borderWidth: 5,
+            rotation: 90
+        }]
+    };
+
+// config
+    const config = {
+        type: 'bar',
+        data: data,
+        skipNull: true,
+        options: {
+            indexAxis: 'y',
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        },
+    };
+
+// render init block
+    new Chart(document.getElementById('chart2'), config);
+
+// Instantly assign Chart.js version
+    const chartVersion = document.getElementById('chartVersion');
+    chartVersion.innerText = Chart.version;
+});

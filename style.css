@@ -185,7 +185,7 @@ button:hover {
 .chartBox {
     width: 700px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: #e0e6ed;
 }
 
