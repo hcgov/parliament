@@ -36,6 +36,7 @@ setInterval(() => {
     }
 }, 1000);
 
+document.getElementById("lastUpdated").innerHTML = `Last updated: ${((Math.floor(Math.round(Date.now()/1000)/3600))%24).toLocaleString(undefined, {minimumIntegerDigits:2})}:${((Math.floor(Math.round(Date.now()/1000)/60))%60).toLocaleString(undefined, {minimumIntegerDigits:2})} UTC`
 //tabs
 
 function openTab(evt, tabName) {
