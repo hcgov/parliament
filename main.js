@@ -37,7 +37,7 @@ fetch("https://raw.githubusercontent.com/hcgov/API/refs/heads/main/status.json")
                 document.getElementById("statusHeader").innerHTML = "<h3>● LIVE <span>Parliament is in session</span></h3>";
             }
             else {
-                document.getElementById("statusHeader").innerHTML = "<h3>● LIVE <span>Parliament is not in session</span></h3>";
+                document.getElementById("statusHeader").innerHTML = "<h3>Parliament is not in session</h3>";
             }
         })
                 
