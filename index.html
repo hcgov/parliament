@@ -54,10 +54,7 @@
 <div class="body-red">
     <br><h1>RECENTLY PASSED LEGISLATIONS & VOTES</h1>
     <div id="recentVotes"></div>
-    <h4><span>En Banc Reform Ammendment</span></h4>
-    <h4><span>Objectivity of the Court Ammendment</span></h4>
-    <h4><span>Kody Supreme Court Appointment Vote</span></h4>
-    <h4>View other legislations in #hc-parliament-chamber on Hack Club's (official) Slack.</h4></div>
+    <h4>Get instant updates on legislation in #hc-parliament-chamber on Hack Club's (official) Slack.</h4></div>
 
 
 <div class="body"><br><br><p style="color: #8492a6">The Parliament of Hack Club (Hack Club Parliament) and other associated communities and entities are not associated with the Hack Club non-profit organization. This is an unofficial community group and only exists for the purpose of entertainment.</p></div>
@@ -86,12 +83,35 @@
             else {
                 document.getElementById("liveAssemblyStatus").innerHTML = `
                 <br><h1 class="montserrat" style="color:#ffffff">THE ${data.assembly} PARLIAMENT ASSEMBLY</h1>
-                <h2>Is not session</h2>
+                <h2>Is ${data.status}</h2>
                 <h4>All activities are on hold</h4>
-                <h5><span style="background-color: rgb(200, 90, 200); padding: 10px; border-radius: 20px;">Current ruling parties are ${data.ruling}</span></h5>
+                <h5><span style="background-color: rgb(25, 30, 20); padding: 10px; border-radius: 20px;">Current ruling parties are ${data.ruling}</span></h5>
                 `;
                 document.getElementById("liveAssemblyStatus").classList.add("sessionNULL");
             }
         })
+    fetch("https://raw.githubusercontent.com/hcgov/API/refs/heads/main/votes.json")
+    .then(function(response) {
+        return response.json();
+    })
+    .then (function(data) {
+        let count = 0;
+        let inner = ``;
+        for (let i = 0; i < data.length; i++) {
+            if (count >= 3) {
+                break;
+            }
+            if (data[i].status === "Passed") {
+                count++;
+                inner += `<h4><span>${data[i].name}</span></h4>`;
+            }
+        }
+        document.getElementById("recentVotes").innerHTML = inner;
+    })
 </script>
 </html>
+<!--
+  <h4><span>En Banc Reform Ammendment</span></h4>
+    <h4><span>Objectivity of the Court Ammendment</span></h4>
+    <h4><span>Kody Supreme Court Appointment Vote</span></h4>
+    -->
