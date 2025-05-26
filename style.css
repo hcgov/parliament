@@ -32,19 +32,6 @@
     font-style: normal;
     font-display: swap;
 }
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
 body{
     background-color: #e0e6ed;
@@ -206,8 +193,4 @@ button:hover {
 }
 span {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.125);
-}
-
-#live{
-    animation: blink 0.7s infinite;
 }
