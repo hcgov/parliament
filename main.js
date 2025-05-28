@@ -50,7 +50,7 @@ setInterval(() => {
         document.getElementById("ballot-banner-title").innerHTML = `Time until the May 2025 ballot closes:`
         document.getElementById("ballot-countdown").innerHTML = `${(Math.floor(Math.round(1748217600 - Date.now() / 1000)/86400))}:${(Math.floor(Math.round(1748217600 - Date.now() / 1000)/3600)%24).toLocaleString(undefined,{minimumIntegerDigits:2})}:${Math.floor((Math.round(1748217600 - Date.now() / 1000)/60)%60).toLocaleString(undefined, {minimumIntegerDigits: 2})}:${(Math.floor(Math.round(1748217600 - Date.now() / 1000))%60).toLocaleString(undefined, {minimumIntegerDigits: 2})}`;
     }else{
-        document.getElementById("ballot-banner-title").innerHTML = "All votes have been counted. Negotiations between parties on coalitions are ongoing.";
+        document.getElementById("ballot-banner-title").innerHTML = "All votes have been counted and results have been finalized.";
         document.getElementById("ballot-countdown").innerHTML = "The May 2025 Ballot has closed. Thank you.";
         document.getElementById("castYourVote").style.display = "none";
     }
