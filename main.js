@@ -28,7 +28,7 @@ document.getElementById("logo").onclick = function() {
 document.getElementById("disclaimer").innerHTML = `
     <h3>The Parliament of Hack Club and other associated entities are not associated with the Hack Club non-profit organization
 `
-fetch("https://raw.githubusercontent.com/hcgov/API/refs/heads/main/status.json")
+fetch("https://raw.githubusercontent.com/hcgov/data/refs/heads/main/status.json")
         .then(function(response) {
             return response.json();
         })
