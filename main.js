@@ -20,7 +20,7 @@ To be added into the navbar
 */
 document.getElementById("header").innerHTML = `
 <!--<img src="parliament-full.svg" id="logo">-->
-<img src="parliament-full.svg" id="logo">
+<img src="querr.svg" id="logo">
 `
 document.getElementById("logo").onclick = function() {
     window.location.href="index.html";
