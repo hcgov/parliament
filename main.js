@@ -8,7 +8,7 @@ document.getElementById("navbar").innerHTML = `
 <div id="header-links">
     <a href="index.html"><div style="padding-left:10px; padding-right:10px">Home</div></a>
     <a href="about.html"><div style="padding-left:10px; padding-right:10px">About</div></a>
-    <a href="404.html"><div style="padding-left:10px; padding-right:10px">Voting</div></a>
+    <a href="vote.html"><div style="padding-left:10px; padding-right:10px">Voting</div></a>
 </div>
 `;
 /*
