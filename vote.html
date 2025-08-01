@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            font-size: 60px;
+            font-weight: 800;
+        }
+        .poll {
+            background-color: rgb(62, 33, 33); 
+            padding: 20px; 
+            margin-top: 10px;
+            margin-right: 10px; 
+            margin-left: 10px; 
+            border-radius: 20px;
+            color: rgb(201, 135, 135);
+            transition: box-shadow 1s, background-color 0.3s ease-in-out;
+        }
+        .poll:hover {
+            background-color: rgb(77, 13, 13); 
+            box-shadow: 0px 10px 20px rgb(94, 16, 16);
+            color: white;
+        }
+    </style>
+    <title>Voting | Hack Club Parliament</title>
+</head>
+<body>
+    <div id="insertTOP"></div>
+        <div class="body">
+            <h1 class="montserrat">VOTING</h1>
+            <div style="background-color: #320606; padding: 20px; border-radius: 20px; color: #e0e6ed;padding: 1px 10px 1px 10px; margin-bottom: 0">
+                <h2 style="margin-top:20px; margin-bottom: -10px" id="ballot-banner-title">Online voting commences</h2>
+                <h1 style="color: #ec3750; font-size: 50px" id="ballot-countdown">August 4th</h1>
+                <h3>12:00 AM UTC</h3>
+            </div>
+            <br><br>
+            <div style="padding: 1px 10px 1px 10px; margin-bottom: 0">
+                <br><h2 style="margin-top:20px; margin-bottom: -10px" id="ballot-banner-title">In-person voting commences</h2>
+                <br><div class="poll">
+                    <h1 style="color: #ec3750; font-size: 50px" id="ballot-countdown">By August 9th</h1>
+                    <h3>Cathleen Stone Island, MA, United States</h3>
+                    <h5>(Shipwrecked Hackathon)</h5>
+                </div><br>
+                <br><div class="poll">
+                    <h1 style="color: #ec3750; font-size: 50px" id="ballot-countdown">August 4th</h1>
+                    <h3>Hanoi, Vietnam</h3>
+                    <h5>(Lobby, Park 6 Building, 458 Minh Khai Ward, Hai Bà Trung District)</h5>
+                </div><br>
+            </div>
+            <br><br>
+            <h3>It is the duty of the citizens of the United Republic of Hack Club to partake in the general elections to elect their Parliamentary Assembly, Prime Minister, and Lead National Attorney. All hack clubbers are eligible URHC citizens and can vote virtually or in-person at designated polling locations.</h3>
+            <br>
+            <div style="background-color: aliceblue; padding: 20px;">
+                <h2 style="font-family: Montserrat;">The Parliamentary Assembly</h2>
+                <h4>is an assembly of elected officials that can hold hearings, hold special votes, and most importantly draft laws/legislation</h4>
+                <br>
+                <h2 style="font-family: Montserrat;">The Prime Minister</h2>
+                <h4>is lead representative in the Parliamentary Assembly, and oversees additional government agencies along with holding greater voting power in the assembly.</h4>
+                <br>
+                <h2 style="font-family: Montserrat;">The Lead National Attorney</h2>
+                <h4>is in charge of the HCNAO (Hack Club National Attorney's Office). The HCNAO handles criminal prosecutions (not civil) and class-action lawsuits, alongside representing the government in the defense of passed and legally charged legislations.</h4>
+                
+            </div>
+    </div>
+    <br>
+        
+        
+    </div>
+</body>
+<script>
+document.getElementById("header").innerHTML = `
+<!--<img src="parliament-full.svg" id="logo">-->
+<img src="querr.svg" id="logo">
+`
+document.getElementById("logo").onclick = function() {
+    window.location.href="index.html";
+}
+document.getElementById("disclaimer").innerHTML = `
+    <h3>The Parliament of Hack Club and other associated entities are not associated with the Hack Club non-profit organization
+`
+</script>
+<script src="main.js"></script>
+</html>
