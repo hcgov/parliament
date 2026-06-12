@@ -26,5 +26,5 @@ document.getElementById("logo").onclick = function() {
     window.location.href="index.html";
 }
 document.getElementById("disclaimer").innerHTML = `
-    <h3>The Parliament of Hack Club and other associated entities are not associated with <a href="https://hackclub.com">the Hack Foundation (d.b.a. Hack Club) 501(c)(3) nonprofit organization</a>.
+    <h3>The Parliament of Hack Club and other associated entities are not associated with <a href="https://hackclub.com" target="_blank">the Hack Foundation (d.b.a. Hack Club) 501(c)(3) nonprofit organization</a>.
 `
