@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..800");
 .montserrat {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 @font-face {
     font-family: 'Phantom Sans';
@@ -39,7 +39,7 @@ body{
 }
 
 .body {
-    font-family: 'Phantom Sans';
+    font-family: 'Phantom Sans', sans-serif;
     text-align: center;
     color: #ec3750;
     padding: 0 20% 0 20%;
@@ -48,9 +48,8 @@ body{
 }
 
 .body-dark{
-    font-family: 'Phantom Sans';
+    font-family: 'Phantom Sans', sans-serif;
     background-color: #555555;
-    margin: 0;
     color:#222222;
     min-width: 100%;
     text-align: center;
@@ -58,32 +57,33 @@ body{
     padding-bottom: 20px;
     font-size: 20px;
     margin-top: 20px;
-    margin-bottom: 0px
+    margin-bottom: 0;
 }
+
 .body-green{
-    font-family: 'Phantom Sans';
+    font-family: 'Phantom Sans', sans-serif;
     background-color: #799c87;
-    margin: 0;
     color:#e0e6ed;
     min-width: 100%;
     text-align: center;
     font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 10px 0px 10px 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0 10px 0;
 }
+
 .sessionNULL {
     background-color: #292e2d !important;
-    font-family: 'Phantom Sans';
-    margin: 0;
+    font-family: 'Phantom Sans', sans-serif;
     color:#e0e6ed;
     min-width: 100%;
     text-align: center;
     font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 10px 0px 10px 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0 10px 0;
 }
+
 .body-red{
     font-family: 'Phantom Sans';
     background-color: #9d4242;
@@ -96,7 +96,7 @@ body{
     margin-top: 0px;
     h4 span {
         background-color: rgb(46, 15, 9) !important;
-        padding: 10px !important; 
+        padding: 10px !important;
         border-radius: 20px !important;
     }
 }
@@ -112,7 +112,7 @@ body{
     margin-top: 0px;
     h3 span {
         background-color: rgb(46, 15, 9) !important;
-        padding: 10px !important; 
+        padding: 10px !important;
         border-radius: 20px !important;
     }
 }
@@ -218,6 +218,16 @@ button:hover {
 .tabcontent {
     display: none;
 }
+
 span {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.125);
+}
+
+#footer p{
+    color: #8492a6;
+}
+
+#body p{
+    font-size: 1.8rem;
+    color: #333333;
 }

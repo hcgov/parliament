@@ -6,9 +6,9 @@ document.getElementById("insertTOP").innerHTML = `
 `
 document.getElementById("navbar").innerHTML = `
 <div id="header-links">
-    <a href="index.html"><div style="padding-left:10px; padding-right:10px">Home</div></a>
-    <a href="about/index.html"><div style="padding-left:10px; padding-right:10px">About</div></a>
-    <a href="vote/index.html"><div style="padding-left:10px; padding-right:10px">Voting</div></a>
+    <a href="../index.html"><div style="padding-left:10px; padding-right:10px">Home</div></a>
+    <a href="index.html"><div style="padding-left:10px; padding-right:10px">About</div></a>
+    <a href="../vote"><div style="padding-left:10px; padding-right:10px">Voting</div></a>
 </div>
 `;
 /*
@@ -20,7 +20,7 @@ To be added into the navbar
 */
 document.getElementById("header").innerHTML = `
 <!--<img src="parliament-full.svg" id="logo">-->
-<img src="querr.svg" id="logo">
+<img src="../querr.svg" id="logo">
 `
 document.getElementById("logo").onclick = function() {
     window.location.href="index.html";
