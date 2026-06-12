@@ -85,23 +85,24 @@ body{
 }
 
 .body-red{
-    font-family: 'Phantom Sans';
+    font-family: 'Phantom Sans', sans-serif;
     background-color: #9d4242;
-    margin: 0;
     color:#e0e6ed;
     min-width: 100%;
     text-align: center;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 0 5px 0;
     font-size: 20px;
-    margin-top: 0px;
+    margin-top: 0;
+
     h4 span {
         background-color: rgb(46, 15, 9) !important;
         padding: 10px !important;
         border-radius: 20px !important;
     }
 }
+
 .body-redX{
-    font-family: 'Phantom Sans';
+    font-family: 'Phantom Sans', sans-serif;
     background-color: #9d4242;
     margin: 0;
     color:#e0e6ed;
@@ -128,7 +129,7 @@ body{
 }
 
 #header-links{
-    font-family: 'Phantom Sans';
+    font-family: 'Phantom Sans', sans-serif;
     background-color: #222222;
     color:#e0e6ed;
     min-width: 100%;
@@ -215,6 +216,7 @@ button:hover {
     border-radius: 5px;
     background-color: #e0e6ed;
 }
+
 .tabcontent {
     display: none;
 }
