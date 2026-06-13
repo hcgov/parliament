@@ -194,3 +194,9 @@ button:hover {
 .tabcontent {
     display: none;
 }
+
+@media (max-width: 767px){
+    #body h1{
+        font-size: 1rem;
+    }
+}

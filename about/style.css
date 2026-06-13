@@ -233,3 +233,13 @@ span {
     font-size: 1.8rem;
     color: #333333;
 }
+
+@media (max-width: 767px){
+    .body{
+        padding: 1rem;
+    }
+
+    #body p{
+        font-size: 1.2rem;
+    }
+}
