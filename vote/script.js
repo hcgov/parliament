@@ -32,8 +32,10 @@ fetch("https://raw.githubusercontent.com/hcgov/vote/main/data.json").then(
     })
     if(now > electionEnd || now < electionStart){
         document.getElementById("vote-status").innerText = "currently closed";
+        document.getElementById("vote-subtext").innerHTML = "<h3>Ballots are currently being counted by HCEC or already finalized.</h3><a href='https://hackclub.enterprise.slack.com/archives/C08FA68NV2T' target='_blank'><button>Join #parliament</button></a>"
     }else{
         document.getElementById("vote-status").innerText = "currently open";
+        document.getElementById("vote-subtext").innerHTML = "<h3>Get your Voter ID here:</h3><a href='https://voterid.hcgov.uk' target='_blank'><button>voterid.hcgov.uk – Voter ID</button></a><h3>and then submit your ballot online here:</h3><a href='https://vote.hcgov.uk' target='_blank'><button>vote.hcgov.uk – eBallot</button></a>"
     }
 });
 

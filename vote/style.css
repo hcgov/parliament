@@ -156,8 +156,7 @@ button {
     -webkit-tap-highlight-color: transparent;
     transition: transform 0.125s ease-in-out, box-shadow 0.125s ease-in-out;
     box-sizing: border-box;
-    margin-top: 10px;
-    min-width: 0;
+    margin: 0 auto 1rem 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -168,7 +167,7 @@ button {
     font-size:20px;
     color: #ec3750;
     border: 2px solid currentcolor;
-    padding: 5px 5px 5px 5px
+    padding: 7px 15px 7px 15px
 }
 
 button:focus,
