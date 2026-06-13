@@ -27,4 +27,17 @@ document.getElementById("logo").onclick = function() {
 }
 document.getElementById("disclaimer").innerHTML = `
     <h3>The Parliament of Hack Club and other associated entities are not associated with <a href="https://hackclub.com" target="_blank">the Hack Foundation (d.b.a. Hack Club) 501(c)(3) nonprofit organization</a>.
-`
+`;
+
+fetch("https://raw.githubusercontent.com/hcgov/vote/main/data.json").then(response=> response.json()).then(
+    data => {
+        let electionCycle = new Date(data["electionCycle"]).toLocaleString("en-US", {
+            year: "numeric",
+            month: "long"
+        });
+
+        document.getElementById("parliament-no").innerText = electionCycle.toUpperCase();
+    }
+)
+
+//     <h4>Votes and Legislation can be proposed and passed</h4>

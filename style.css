@@ -156,7 +156,7 @@ button {
     -webkit-tap-highlight-color: transparent;
     transition: transform 0.125s ease-in-out, box-shadow 0.125s ease-in-out;
     box-sizing: border-box;
-    margin-top: 10px;
+    margin: auto auto 1rem auto;
     min-width: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -168,7 +168,7 @@ button {
     font-size:20px;
     color: #ec3750;
     border: 2px solid currentcolor;
-    padding: 5px 5px 5px 5px
+    padding: 5px 15px 5px 10px
 }
 
 button:focus,
@@ -192,9 +192,11 @@ button:hover {
     border-radius: 5px;
     background-color: #e0e6ed;
 }
+
 .tabcontent {
     display: none;
 }
-span {
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.125);
+
+a{
+    color: #71abd8;
 }
