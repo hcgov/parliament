@@ -200,3 +200,14 @@ button:hover {
 a{
     color: #71abd8;
 }
+
+@media (max-width: 767px){
+    .body{
+        padding: 1rem;
+    }
+
+    h1{
+        font-size: 2rem;
+        margin: 0;
+    }
+}
