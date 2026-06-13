@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..800");
+.montserrat {
+    font-family: Montserrat;
+}
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+    format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+    format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+    format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+    format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+    format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+    format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-color: #e0e6ed;
+    margin: 0;
+}
+
+.body {
+    font-family: 'Phantom Sans';
+    text-align: center;
+    color: #ec3750;
+    padding: 0 20% 0 20%;
+    margin-top: 10px;
+    margin-bottom: 30px
+}
+
+.body-dark{
+    font-family: 'Phantom Sans', sans-serif;
+    background-color: #555555;
+    color:#222222;
+    min-width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin: 20px 0 0;
+}
+.body-green{
+    font-family: 'Phantom Sans', sans-serif;
+    background-color: #799c87;
+    color:#e0e6ed;
+    min-width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0;
+    padding: 10px 0 10px 0;
+}
+.sessionNULL {
+    background-color: #292e2d !important;
+    font-family: 'Phantom Sans', sans-serif;
+    color:#e0e6ed;
+    min-width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0;
+    padding: 10px 0 10px 0;
+}
+.body-red{
+    font-family: 'Phantom Sans', sans-serif;
+    background-color: #9d4242;
+    color:#e0e6ed;
+    min-width: 100%;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    font-size: 20px;
+    margin: 0;
+    h4 span {
+        background-color: rgb(46, 15, 9) !important;
+        padding: 10px !important;
+        border-radius: 20px !important;
+    }
+}
+
+#header{
+    background: #333333 linear-gradient(90deg, rgba(101, 183, 201, 1) 0%, rgba(196, 135, 155, 1) 18%, rgba(166, 3, 3, 1) 37%, rgba(168, 94, 3, 1) 49%, rgba(166, 155, 0, 1) 60%, rgba(1, 61, 11, 1) 73%, rgba(0, 50, 82, 1) 85%, rgba(53, 3, 61, 1) 100%);
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 0;
+}
+
+#header-links{
+    font-family: 'Phantom Sans', sans-serif;
+    background-color: #222222;
+    color:#e0e6ed;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    a {
+        color:#e0e6ed;
+        text-decoration: none;
+
+    }
+}
+
+#logo {
+    height: 60px;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 40px
+}
+
+#disclaimer {
+    font-family: Phantom Sans, sans-serif;
+    color: white;
+    background-color: rgb(4, 0, 0);
+    text-align: center;
+    margin-bottom: 0;
+    padding: 3px 4rem;
+}
+
+#disclaimer a{
+    color: #ec3750;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 99999px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
+    letter-spacing: 0.009em;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.125s ease-in-out, box-shadow 0.125s ease-in-out;
+    box-sizing: border-box;
+    margin-top: 10px;
+    min-width: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+    line-height: inherit;
+    text-decoration: none;
+    background-color: #e0e6ed;
+    font-size:20px;
+    color: #ec3750;
+    border: 2px solid currentcolor;
+    padding: 5px 5px 5px 5px
+}
+
+button:focus,
+button:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.125);;
+    transform: scale(1.0625);
+}
+
+.chartMenu p {
+    padding: 10px;
+    font-size: 20px;
+}
+.chartCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chartBox {
+    width: 700px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #e0e6ed;
+}
+.tabcontent {
+    display: none;
+}

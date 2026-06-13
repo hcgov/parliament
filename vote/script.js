@@ -18,6 +18,25 @@ To be added into the navbar
 <div style="padding-left:10px; padding-right:10px">Committees & Divisions</div>
 
 */
+
+fetch("https://raw.githubusercontent.com/hcgov/vote/main/data.json").then(
+    response => response.json()
+).then(data => {
+    let now = new Date().getTime();
+    let electionStart = data["electionStart"];
+    let electionEnd = data["electionEnd"];
+    let electionCycle = new Date(data["electionCycle"]);
+    document.getElementById("election-cycle").innerText = electionCycle.toLocaleDateString("en-US", {
+        month: "long",
+        year: "numeric",
+    })
+    if(now > electionEnd || now < electionStart){
+        document.getElementById("vote-status").innerText = "currently closed";
+    }else{
+        document.getElementById("vote-status").innerText = "currently open";
+    }
+});
+
 document.getElementById("header").innerHTML = `
 <!--<img src="parliament-full.svg" id="logo">-->
 <img src="../querr.svg" id="logo">
