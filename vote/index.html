@@ -40,20 +40,45 @@
             <h3>It is the duty of the citizens of the Democratic Republic of Hack Club to partake in the General Election to elect their Parliamentary Assembly, Prime Minister, and Lead National Attorney. All citizens of the Democratic Republic of Hack Club can vote virtually or in-person at designated polling locations.</h3>
             <br>
             <div style="background-color: aliceblue; padding: 20px;">
-                <h2 class="montserrat">The Parliamentary Assembly</h2>
+                <h2 class="montserrat section-title">The Parliamentary Assembly</h2>
                 <h4>is an assembly of elected officials that can hold hearings, hold special votes, and most importantly draft laws/legislation. The seats given to parties will be proportional to each party's respective votes in the election.</h4>
                 <br>
-                <h2 class="montserrat">The Prime Minister</h2>
+                <h2 class="montserrat section-title">The Prime Minister</h2>
                 <h4>is lead representative in the Parliamentary Assembly, and oversees additional government agencies along with holding greater voting power in the assembly. The Prime Minister shall be decided by the party or party coalition holding the majority.</h4>
             </div>
             <br><br>
             <h2>The Democratic Republic of Hack Club uses Ranked-Choice voting for our General Elections.</h2>
             <h2>Rank-Choice Voting</h2>
             <h3>How does voting work?</h3><br>
-            <img src="../ranked.png" style="width: 100%"/>
+            <img id="ranked-pic" src="../ranked.png" style="width: 100%"/>
+            <div id="mobile-text">
+                <p><b>Step 1: Votes rank the candidates</b></p>
+                <p>On the ballot, you rank the candidates:</p>
+                <ul>
+                    <li>1st choice</li>
+                    <li>2nd choice</li>
+                    <li>3rd choice</li>
+                    <li>And so on...</li>
+                </ul>
+                <p><b>Step 2: Counting the votes</b></p>
+                <p><b>First round:</b></p>
+                <ul>
+                    <li>Only <b>first-choice</b> votes are counted</li>
+                    <li>If a candidate gets <b>more than 50%</b> of the first-choice votes, then <b>win outright</b></li>
+                </ul>
+                <b>If no one gets a majority (a majority is ≥ 50%):</b>
+                <ul>
+                    <li>The candidate with the <b>fewest first-choice votes is eliminated</b></li>
+                    <li>Voters who chose the eliminated candidate as their first choice will have their <b>next-ranked choice counted instead</b>.</li>
+                </ul>
+                <p><b>Repeating rounds:</b></p>
+                <ul>
+                    <li>This process repeats – eliminating lowest-ranked candidate reallocating their supporters' next choices – until one candidate has <b>a majority and wins</b>.</li>
+                </ul>
+                <img src="../ranked-mobile.png" style="width: 100%"/>
             </div>
-            </div>
-    
+        </div>
+
 </body>
 <script>
 document.getElementById("header").innerHTML = `

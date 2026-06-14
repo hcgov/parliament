@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..800");
 .montserrat {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 @font-face {
     font-family: 'Phantom Sans';
@@ -39,7 +39,7 @@ body{
 }
 
 .body {
-    font-family: 'Phantom Sans';
+    font-family: 'Phantom Sans', sans-serif;
     text-align: center;
     color: #ec3750;
     padding: 0 20% 0 20%;
@@ -196,7 +196,24 @@ button:hover {
 }
 
 @media (max-width: 767px){
-    #body h1{
-        font-size: 1rem;
+    .montserrat{
+        font-size: 3rem;
+    }
+
+    .body{
+        padding: 1rem;
+    }
+
+    .section-title{
+        font-size: 1.7rem;
+    }
+
+    #ranked-pic{
+        display: none;
+    }
+
+    #mobile-text{
+        text-align: left;
+        color: black;
     }
 }
