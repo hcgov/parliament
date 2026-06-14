@@ -218,4 +218,9 @@ a{
     h3, h4{
         margin: 1rem;
     }
+
+    .body-red, .body-green{
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
 }
