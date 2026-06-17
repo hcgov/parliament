@@ -195,6 +195,10 @@ button:hover {
     display: none;
 }
 
+#mobile-text{
+    display: none;
+}
+
 @media (max-width: 767px){
     .montserrat{
         font-size: 3rem;
@@ -213,6 +217,7 @@ button:hover {
     }
 
     #mobile-text{
+        display: block;
         text-align: left;
         color: black;
     }
